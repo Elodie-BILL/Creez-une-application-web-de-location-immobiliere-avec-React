@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Home-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #FF6060;
+    
+}
