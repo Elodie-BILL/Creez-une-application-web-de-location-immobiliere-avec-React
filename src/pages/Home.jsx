@@ -1,40 +1,37 @@
-
+import LOGO from '../assets/LOGO.jpg';
+import '../style/Home.css';
 // Récupération des donnée du fichier JSON
 
-const getData=()=>{
-  fetch('data.json'
-  ,{
-    headers : { 
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
-     }
-  }
-  )
-    .then(function(response){
-      console.log(response)
-      return response.json();
+import { useEffect } from "react";
+function DataHome() {
+  const getData = () => {
+    fetch('data.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
     })
-    .then(function(myJson) {
-      console.log(myJson);
-    })
-    .catch (error, res) = () => res.json({error}) 
-}
-useEffect(()=>{ getData()},[])
-
-function Home() {
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (myJson) {
+        console.log(myJson);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  useEffect(() => { getData(); }, []);
   return (
     <div className="Home">
       <header className="Home-header">
-      <div>
-        <img src="" alt="" />
-      </div>
-     <p> Accueil </p>
-     <p> A propos </p>
+        <div>
+          <img src={LOGO} alt="représentation du logo de kasa" className = "pink_logo_kasa" />
+        </div>
+        <p> Accueil </p>
+        <p> A propos </p>
       </header>
     </div>
   );
 }
-
-
-
-export default Home;
+export default DataHome;
