@@ -6,21 +6,21 @@
 body {
     margin: 0 10%;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
 }
 
 /* Home page */
-.Home-header{
+.Home-header {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: #FF6060;
-    
+
 }
 
-.Home-header_nav{
+.Home-header_nav {
     width: 30%;
     display: flex;
     flex-direction: row;
@@ -29,12 +29,12 @@ body {
     font-size: 1.5em;
 }
 
-#underline{
+#underline {
     text-decoration: underline;
 
 }
 
-.banner-section1{
+.banner-section1 {
     width: 1240px;
 }
 
@@ -42,7 +42,3 @@ body {
 
 
 /* Page error 404 */
-
-.error_pic{
-    
-}
