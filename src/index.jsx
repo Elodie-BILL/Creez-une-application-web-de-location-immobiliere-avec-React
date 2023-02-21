@@ -1,21 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Error404 from './pages/Error';
+import './style/style.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Error from './pages/Error';
 import Home from './pages/Home';
+import Header from './components/Header/Index';
 
 
-ReactDOM.render(
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
     <React.StrictMode>
         <Router>
-            <Route exact path="/">
-                <Home />
-            </Route>
-            <Route path="/error404">
-                <Error404 />
-            </Route>
+            <Header />
+            <switch>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/error404" element={<Error />} />
+                    <Route element={<Error />} />
+                </Routes>
+            </switch>
         </Router>
-    </React.StrictMode>,
-    document.getElementById('root')
+    </React.StrictMode>
 )
 

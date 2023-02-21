@@ -1,33 +1,25 @@
 import React from 'react'
-import '../style/Home.css'
-import Header from '../components/Header'
-import error from '../assets/404.png'
+import { Link } from "react-router-dom";
+import errorImage from '../assets/404.png'
 
-
-const DataEr = {
-    src: { error },
-    alt: " image affichant: error 404 ",
-    sentence1: "Oups! La page que vous demandez n'existe pas.",
-    backToHome: "Retourner sur le page d'accueil."
-
-}
-
-function Error404(props) {
+function Error() {
     return (
 
-        <div className='error-pic'>
+        <div className='error-pic' >
             <img
-                src={DataEr.src}
-                alt={DataEr.alt} />
-            <p> {DataEr.sentence1}</p>
+                src={errorImage}
+                alt="affichant: error 404"
+            />
+            <p>Oups! La page que vous demandez n'existe pas.</p>
 
-            <a href="./Homes.jsx">
-                <p>{DataEr.backToHome}</p>
-            </a>
+            <Link to="/">
+                <p>Retourner sur le page d'accueil</p>
+            </Link>
         </div>
+
     )
 }
 
-Error404();
 
-export default Error404;
+
+export default Error;

@@ -1,17 +1,16 @@
 import React from "react";
-import ReactDOM from "react";
-import Header from "../components/Header";
-import Banner from "../components/Banner";
+import Banner from "../components/Banner/Banner";
+import BannerHome from '../assets/BannerHome.png'
+
 
 function Home() {
+
+
     return (
-        <body>
-            <Header />
-            <Banner />
-        </body>
+        <React.Fragment>
+            <Banner srcImage={BannerHome} altImage="Image de paysage brumeux de type falaise rocheuse en bord d'océan " textBanner="Chez vous partout et ailleurs" />
+        </React.Fragment>
     )
 }
-
-Home();
 
 export default Home;
