@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './style/style.css'
+import './pages/style.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Error from './pages/Error';
-import Home from './pages/Home';
+import Error from './pages/Error/Index';
+import Home from './pages/home/Index';
 import Header from './components/Header/Index';
 
 

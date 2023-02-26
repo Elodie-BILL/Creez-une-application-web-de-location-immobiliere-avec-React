@@ -1,16 +1,18 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import errorImage from '../assets/404.png'
+import Style from "./ErrorStyle.css"
 
-function Error() {
+
+
+function Error({ srcImg, altImg, textEr }) {
     return (
 
         <div className='error-pic' >
             <img
-                src={errorImage}
-                alt="affichant: error 404"
+                src={srcImg}
+                alt={altImg}
             />
-            <p>Oups! La page que vous demandez n'existe pas.</p>
+            <p>{textEr}</p>
 
             <Link to="/">
                 <p>Retourner sur le page d'accueil</p>
