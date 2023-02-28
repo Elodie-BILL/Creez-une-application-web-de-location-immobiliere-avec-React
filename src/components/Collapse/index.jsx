@@ -3,6 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types"
 import "./style.css"
 import { useState } from "react";
+import Vector from "../../assets/Vector.png"
 
 
 const DivTitle = styled.button`
@@ -25,6 +26,7 @@ const DivTexte = styled.div`
     margin : 0 15% 1% 15%;
     border : 1px solide #F6F6F6;
     background-color : #F6F6F6;
+
 `
 const ImgVect = styled.img`
     height : 14px;
@@ -33,20 +35,20 @@ const ImgVect = styled.img`
 
 
 
-const Collapse = ({ title, texte, srcImg }) => {
+const Collapse = ({ title, texte }) => {
 
     const [open, updateOpen] = useState(false);
 
     return (
         <React.Fragment>
-            Test: {open ? 'vrai' : 'faux'}
+            {/* Test: {open ? 'vrai' : 'faux'} */}
             <DivTitle onClick={() => { updateOpen(!open) }} >
 
                 <p className="Apropos_Title">
                     {title}
                 </p>
 
-                <ImgVect src={srcImg} alt="Image vectorielle d'une flèche " />
+                <ImgVect src={Vector} alt="Image vectorielle d'une flèche " />
             </DivTitle>
 
             {open && <DivTexte>
@@ -62,11 +64,8 @@ const Collapse = ({ title, texte, srcImg }) => {
 
 Collapse.propTypes = {
     title: PropTypes.string.isRequired,
-    srcImg: PropTypes.string,
     texte: PropTypes.string.isRequired,
-
 }
-
 
 
 export default Collapse

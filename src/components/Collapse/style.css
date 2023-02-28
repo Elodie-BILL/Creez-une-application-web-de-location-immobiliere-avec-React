@@ -1,11 +1,4 @@
-@font-face {
-    font-family: "Montserrat";
-    src: url(../../assets/police/Montserrat-Medium.otf);
-}
-
-
 .Apropos_Title {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 24px;
     text-align: left;
     margin: 0;
@@ -15,11 +8,13 @@
 }
 
 .Apropos_Texte {
-
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
     padding: 20px 12px;
     color: #FF6060;
     font-weight: lighter;
+}
+
+.globalDiv_Collapse {
+    margin-bottom: 3%;
 }

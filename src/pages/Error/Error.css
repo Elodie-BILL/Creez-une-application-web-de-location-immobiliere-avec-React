@@ -1,0 +1,28 @@
+.section_errorPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 900px;
+
+}
+
+.ErrorImg {
+    width: 597px;
+    height: 263px;
+    padding-left: 30%;
+
+
+}
+
+.Error_p {
+    color: #FF6060;
+    text-align: center;
+    font-size: 36px;
+
+}
+
+.ErrorLink_endpage {
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+}

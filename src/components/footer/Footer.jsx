@@ -1,6 +1,6 @@
 import React from "react";
-import PropTypes from 'prop-types';
 import styled from 'styled-components'
+import Logo from '../../assets/LOGOblack.png'
 
 const DivFooter = styled.div`
     background-color:#000 ;
@@ -14,26 +14,22 @@ const LogoFooter = styled.img`
 const TextFooter = styled.p`
     text-align : center;
     color: #fff ;
+    
 
 `
 
-const Footer = ({ srcfootImg, altFootImg, textFooter }) => {
+const Footer = () => {
     return (
         <DivFooter>
             <LogoFooter
-                src={srcfootImg}
-                alt={altFootImg}
+                src={Logo}
+                alt=" Logo Kasa monochrome noir"
             />
-            <TextFooter>{textFooter}</TextFooter>
+            <TextFooter> © 2020 Kasa. All rights reserved </TextFooter>
 
         </DivFooter>
     )
 }
 
-Footer.propTypes = {
-    srcFootImg: PropTypes.string,
-    altFootImg: PropTypes.string,
-    textFooter: PropTypes.string,
-}
 
-export default Footer
+export default Footer;
