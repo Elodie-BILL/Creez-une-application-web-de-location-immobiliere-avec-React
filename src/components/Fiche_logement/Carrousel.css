@@ -1,4 +1,4 @@
-.caroussel_div {
+.carrousel_div {
     height: 415px;
     width: 1357px;
     margin: 50px 80px;
@@ -13,13 +13,22 @@
 #right_btn {
     right: 0;
     bottom: 50%;
+    background-color: aqua;
 }
 
 .imgDiv {
+    object-fit: cover;
+    background-color: blueviolet;
     width: 100%;
+    border-radius: 25px;
 }
 
-#left {
+.imgDiv img {
+    object-fit: cover;
+}
+
+#left_btn {
     left: 0;
     bottom: 50%;
+    background-color: aqua;
 }
