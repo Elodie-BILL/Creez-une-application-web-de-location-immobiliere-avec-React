@@ -13,7 +13,7 @@ function Home() {
             <Banner srcImage={BannerHome} altImage="Image de paysage brumeux de type falaise rocheuse en bord d'océan " textBanner="Chez vous, partout et ailleurs" />
             <div className="cards-div">
                 {Data.map((element) => (
-                    <Card
+                    <Card key={element.id}
                         id={element.id}
                         title={element.title}
                         cover={element.cover}

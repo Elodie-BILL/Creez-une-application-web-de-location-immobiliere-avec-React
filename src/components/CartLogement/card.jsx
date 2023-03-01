@@ -7,10 +7,10 @@ import "../CartLogement/card.css"
 
 console.log(Data);
 
-const Card = ({ title, cover, altText }) => {
+const Card = ({ title, cover, altText, id }) => {
     return (
         <article className="article_card">
-            <Link to="/error404">
+            <Link to={id}>
                 <img className="cardStyle" src={`${cover}`} alt={altText} />
                 <h2>{`${title}`}</h2>
             </Link>

@@ -1,0 +1,25 @@
+.caroussel_div {
+    height: 415px;
+    width: 1357px;
+    margin: 50px 80px;
+    display: flex;
+    position: relative;
+}
+
+.swip_btn {
+    position: absolute;
+}
+
+#right_btn {
+    right: 0;
+    bottom: 50%;
+}
+
+.imgDiv {
+    width: 100%;
+}
+
+#left {
+    left: 0;
+    bottom: 50%;
+}

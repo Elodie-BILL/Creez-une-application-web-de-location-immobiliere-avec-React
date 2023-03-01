@@ -7,6 +7,7 @@ import Header from './components/Header/Index';
 import Apropos from './pages/Apropos/Index';
 import Footer from './components/Footer/Footer';
 import FicheLogement from './pages/Fiche_logmement/FicheLog';
+import "./style.css"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,7 +24,7 @@ root.render(
                 <Route path="/" element={<Home />} />
                 <Route path="/error404" element={<Error />} />
                 <Route path="/apropos" element={<Apropos />} />
-                <Route path="/fl" element={<FicheLogement />} />
+                <Route path="/:id" element={<FicheLogement />} />
                 <Route element={<Error />} />
             </Routes>
 
