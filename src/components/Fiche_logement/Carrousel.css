@@ -11,24 +11,25 @@
 }
 
 #right_btn {
-    right: 0;
-    bottom: 50%;
-    background-color: aqua;
+    right: 20px;
+    bottom: 40%;
+
 }
 
 .imgDiv {
-    object-fit: cover;
-    background-color: blueviolet;
     width: 100%;
+
+}
+
+.img {
+    height: 415px;
+    width: 1357px;
+    object-fit: cover;
     border-radius: 25px;
 }
 
-.imgDiv img {
-    object-fit: cover;
-}
-
 #left_btn {
-    left: 0;
-    bottom: 50%;
-    background-color: aqua;
+    left: 20px;
+    bottom: 40%;
+
 }

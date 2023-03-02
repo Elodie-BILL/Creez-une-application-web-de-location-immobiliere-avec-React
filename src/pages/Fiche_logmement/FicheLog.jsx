@@ -1,5 +1,6 @@
 import React from "react";
 import Carrousel from "../../components/Fiche_logement/Caroussel";
+import DataContent from "../../components/Fiche_logement/DataContent"
 import { useParams } from "react-router-dom";
 import data from "../../data/data.json"
 
@@ -11,13 +12,15 @@ function FicheLogement() {
     const findLogement = data.find((logement) => {
         return logement.id === id;
     })
-    console.log(findLogement);
+
 
 
     return (
         <React.Fragment>
 
-            <Carrousel />
+            <Carrousel srcImg={findLogement.pictures} />
+            <DataContent title={findLogement.title} location={findLogement.location} tag={[findLogement.tags]} />
+
 
 
         </React.Fragment>
