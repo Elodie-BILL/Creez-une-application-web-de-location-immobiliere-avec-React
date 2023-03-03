@@ -13,13 +13,13 @@ function FicheLogement() {
         return logement.id === id;
     })
 
-
+    const tagContent = findLogement.tags.map((tag) => (<p> {tag}</p>));
 
     return (
         <React.Fragment>
 
             <Carrousel srcImg={findLogement.pictures} />
-            <DataContent title={findLogement.title} location={findLogement.location} tag={[findLogement.tags]} />
+            <DataContent title={findLogement.title} location={findLogement.location} tag={tagContent} rating={findLogement.rating} />
 
 
 

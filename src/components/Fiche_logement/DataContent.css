@@ -1,1 +1,24 @@
-h1 {}
+h1 {
+    color: #FF6060;
+    font-weight: 500;
+    margin: 0;
+}
+
+p {
+    color: #FF6060;
+    margin: 10px 0;
+}
+
+span {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+span :nth-child(1n+0) {
+    border: 1px solid #FF6060;
+    border-radius: 15px;
+    background-color: #FF6060;
+    color: #fff;
+    padding: 5px;
+}
