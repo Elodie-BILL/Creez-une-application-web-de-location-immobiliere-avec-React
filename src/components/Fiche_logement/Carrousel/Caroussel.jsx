@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import left from "../../assets/VectorRight.png";
-import right from "../../assets/VectorLeft.png";
+import left from "../../../assets/VectorLeft.png"
+import right from "../../../assets/VectorRight.png";
 import { useParams } from "react-router-dom";
-import "../Fiche_logement/Carrousel.css";
+import "../Carrousel/Carrousel.css";
 
 
 const Carrousel = ({ srcImg }) => {

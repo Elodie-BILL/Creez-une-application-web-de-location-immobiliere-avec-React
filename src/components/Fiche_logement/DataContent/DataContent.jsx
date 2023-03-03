@@ -1,5 +1,5 @@
 import React from "react";
-import "../Fiche_logement/DataContent.css"
+import "../DataContent/DataContent.css"
 
 
 
@@ -17,7 +17,7 @@ const Content = ({ title, location, tag, rating, hostName, hostPic }) => {
                 <p>
                     {location}
                 </p>
-                <span>
+                <span >
                     {tag}
                 </span>
             </div>
@@ -26,11 +26,14 @@ const Content = ({ title, location, tag, rating, hostName, hostPic }) => {
                 <p>{hostName}</p>
                 <img src={hostPic} alt="" />
             </div>
+            <div className="ratingContent">
+                {rating}
 
+            </div>
 
         </React.Fragment >
         // Trouver solution ppour affiche nombre d'étoile en fonction de la note
-        // Trouver solution pour afficher les tag individuellement
+
     )
 
 };

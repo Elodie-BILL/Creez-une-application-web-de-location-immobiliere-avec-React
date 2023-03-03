@@ -6,19 +6,28 @@ h1 {
 
 p {
     color: #FF6060;
-    margin: 10px 0;
+    margin: 0;
+
 }
 
 span {
-    width: 20%;
+    width: 22%;
     display: flex;
     justify-content: space-between;
+    margin: 5px 0;
 }
 
 span :nth-child(1n+0) {
     border: 1px solid #FF6060;
-    border-radius: 15px;
+    border-radius: 11px;
     background-color: #FF6060;
     color: #fff;
     padding: 5px;
+
+
+}
+
+
+.collapseDiv {
+    display: flex;
 }
