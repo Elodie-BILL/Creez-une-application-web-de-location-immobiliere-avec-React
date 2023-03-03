@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import data from "../../data/data.json"
 import Collapse from "../../components/Collapse";
 import DisplayRating from "../../components/Fiche_logement/Rating/Rating";
+import "./Fiche_log.css"
 
 
 
@@ -27,8 +28,10 @@ function FicheLogement() {
             <Carrousel srcImg={findLogement.pictures} />
             <DataContent title={findLogement.title} location={findLogement.location} tag={tagContent} />
             <DisplayRating rating={findLogement.rating} />
-            <Collapse title="Description" texte={findLogement.description} />
-            <Collapse title="Equipement" texte={equipementContent} />
+            <div className="collapseDiv">
+                <Collapse title="Description" texte={findLogement.description} className="collapse" />
+                <Collapse title="Equipement" texte={equipementContent} className="collapse" />
+            </div>
 
 
 

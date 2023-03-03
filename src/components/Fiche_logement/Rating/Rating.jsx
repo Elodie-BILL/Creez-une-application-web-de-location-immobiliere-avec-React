@@ -11,17 +11,23 @@ const DisplayRating = ({ rating }) => {
     return (
         <div>
             {scale.map((number) => {
-
                 return rating < number
                     ? <img src={greyStar} alt="jolie étoile grise" />
-                    : <img src={pinkStar} alt="jolie étoile grise" />
-
-
+                    : <img src={pinkStar} alt="jolie étoile rose" />
             })}
         </div>
     )
 
 
 }
+
+/**
+ *  number: 1 | rating : 3 |  3 < 1 ? faux -> on renvoie l'étoile orange
+ *  number: 2 | rating : 3 |  3 < 2 ? faux -> on renvoie l'étoile orange
+ *  number: 3 | rating : 3 |  3 < 3 ? faux -> on renvoie l'étoile orange
+ *  number: 4 | rating : 3 |  3 < 4 ? vrai -> on renvoie l'étoile grise
+ *  number: 5 | rating : 3 |  3 < 5 ? vrai -> on renvoie l'étoile grise
+*/
+
 
 export default DisplayRating;

@@ -10,7 +10,7 @@ const Collapse = ({ title, texte }) => {
     const [open, updateOpen] = useState(false);
 
     return (
-        <React.Fragment>
+        <section className="collapseContent">
             {/* Test: {open ? 'vrai' : 'faux'} */}
             <div className="divTitle" onClick={() => { updateOpen(!open) }} >
 
@@ -28,7 +28,7 @@ const Collapse = ({ title, texte }) => {
 
             </div>}
 
-        </React.Fragment>
+        </section>
     )
 }
 
