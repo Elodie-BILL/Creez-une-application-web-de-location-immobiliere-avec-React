@@ -10,25 +10,29 @@ const Collapse = ({ title, texte }) => {
     const [open, updateOpen] = useState(false);
 
     return (
-        <section className="collapseContent">
+        <div className="collapse_div">
             {/* Test: {open ? 'vrai' : 'faux'} */}
             <div className="divTitle" onClick={() => { updateOpen(!open) }} >
 
-                <p className="Apropos_Title">
+                <p className="Collapse_Title">
                     {title}
                 </p>
 
-                <img className="imgVect" src={Vector} alt="Image vectorielle d'une flèche " />
+                <img
+                    className="imgVect"
+                    src={Vector}
+                    alt="Image vectorielle d'une flèche "
+                />
             </div>
 
             {open && <div className="divTexte" >
-                <p className="Apropos_Texte">
+                <p className="Collapse_Texte">
                     {texte}
                 </p>
 
             </div>}
 
-        </section>
+        </div>
     )
 }
 

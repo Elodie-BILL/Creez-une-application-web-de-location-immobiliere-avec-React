@@ -5,7 +5,9 @@ import { useParams } from "react-router-dom";
 import data from "../../data/data.json"
 import Collapse from "../../components/Collapse";
 import DisplayRating from "../../components/Fiche_logement/Rating/Rating";
+import DataHost from "../../components/Fiche_logement/Host/Host";
 import "./Fiche_log.css"
+
 
 
 
@@ -23,14 +25,25 @@ function FicheLogement() {
 
 
     return (
-        <React.Fragment>
+        <React.Fragment>.
 
             <Carrousel srcImg={findLogement.pictures} />
-            <DataContent title={findLogement.title} location={findLogement.location} tag={tagContent} />
-            <DisplayRating rating={findLogement.rating} />
+            <div className="titleRateHost">
+
+                <div className="titleDiv">
+                    <DataContent title={findLogement.title} location={findLogement.location} tag={tagContent} />
+                </div>
+
+                <div className="ratingHostDiv" >
+                    <DataHost hostName={findLogement.host.name} hostPic={findLogement.host.picture} />
+                    <DisplayRating rating={findLogement.rating} />
+                </div>
+
+            </div>
+
             <div className="collapseDiv">
-                <Collapse title="Description" texte={findLogement.description} className="collapse" />
-                <Collapse title="Equipement" texte={equipementContent} className="collapse" />
+                <Collapse title="Description" texte={findLogement.description} />
+                <Collapse title="Equipement" texte={equipementContent} />
             </div>
 
 

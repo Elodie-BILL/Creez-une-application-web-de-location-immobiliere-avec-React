@@ -3,7 +3,7 @@ import "../DataContent/DataContent.css"
 
 
 
-const Content = ({ title, location, tag, rating, hostName, hostPic }) => {
+const Content = ({ title, location, tag, rating }) => {
 
     const tagLength = tag.length;
     console.log(tagLength);
@@ -21,18 +21,8 @@ const Content = ({ title, location, tag, rating, hostName, hostPic }) => {
                     {tag}
                 </span>
             </div>
-            <div>
-                <img src={rating} alt="" />
-                <p>{hostName}</p>
-                <img src={hostPic} alt="" />
-            </div>
-            <div className="ratingContent">
-                {rating}
-
-            </div>
 
         </React.Fragment >
-        // Trouver solution ppour affiche nombre d'étoile en fonction de la note
 
     )
 

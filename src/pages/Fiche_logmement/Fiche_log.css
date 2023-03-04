@@ -1,4 +1,35 @@
+.titleRateHost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.titleDiv {
+    width: 60%;
+
+}
+
+.ratingHostDiv {
+    width: 30%
+}
+
 .collapseDiv {
     display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.collapseDiv :nth-child(1n+0) {
+    width: 48%;
+
+
+
+}
+
+.collapseDiv p {
     margin: 0;
+    width: 100%;
 }

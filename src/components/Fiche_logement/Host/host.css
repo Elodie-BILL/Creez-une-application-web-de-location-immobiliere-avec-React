@@ -1,0 +1,17 @@
+.data_host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.data_host img {
+    border-radius: 80px;
+}
+
+.data_host p {
+    font-weight: 500;
+
+    width: 20%;
+}

@@ -11,7 +11,7 @@ p {
 }
 
 span {
-    width: 22%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     margin: 5px 0;
@@ -25,9 +25,4 @@ span :nth-child(1n+0) {
     padding: 5px;
 
 
-}
-
-
-.collapseDiv {
-    display: flex;
 }
