@@ -23,7 +23,7 @@ Card.propTypes = {
     title: PropTypes.string,
     cover: PropTypes.string,
     altText: PropTypes.string
-}
+};
 
-export default Card
+export default Card;
 

@@ -52,3 +52,5 @@ function FicheLogement() {
     )
 }
 export default FicheLogement;
+
+// trouver solution au colapse;

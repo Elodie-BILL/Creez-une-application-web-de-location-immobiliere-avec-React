@@ -2,19 +2,23 @@ h1 {
     color: #FF6060;
     font-weight: 500;
     margin: 0;
+    padding-block: 10px;
 }
 
 p {
     color: #FF6060;
     margin: 0;
+    font-weight: 500;
+    font-size: 18px;
 
 }
 
 span {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
-    margin: 5px 0;
+    margin: 20px 0;
+
 }
 
 span :nth-child(1n+0) {
@@ -22,7 +26,9 @@ span :nth-child(1n+0) {
     border-radius: 11px;
     background-color: #FF6060;
     color: #fff;
-    padding: 5px;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 200;
 
 
 }
