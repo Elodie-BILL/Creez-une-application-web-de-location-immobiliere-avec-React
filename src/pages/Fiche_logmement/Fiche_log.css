@@ -7,12 +7,15 @@
 }
 
 .titleDiv {
-    width: 60%;
-
+    width: 50%;
 }
 
+
 .ratingHostDiv {
-    width: 30%
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .collapseDiv {
@@ -22,10 +25,9 @@
     margin: 0 10%;
 }
 
-.collapseDiv :nth-child(1n+0) {
-    width: 48%;
-
-
+.collapseDiv :nth-child(n) {
+    width: 95%;
+    justify-content: space-between;
 
 }
 

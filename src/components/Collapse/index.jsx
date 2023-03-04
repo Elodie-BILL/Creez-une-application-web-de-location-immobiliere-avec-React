@@ -10,7 +10,7 @@ const Collapse = ({ title, texte }) => {
     const [open, updateOpen] = useState(false);
 
     return (
-        <div className="collapse_div">
+        <div className="collapse">
             {/* Test: {open ? 'vrai' : 'faux'} */}
             <div className="divTitle" onClick={() => { updateOpen(!open) }} >
 

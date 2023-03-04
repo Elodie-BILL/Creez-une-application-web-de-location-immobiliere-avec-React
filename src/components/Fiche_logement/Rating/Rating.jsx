@@ -9,7 +9,7 @@ const DisplayRating = ({ rating }) => {
     const scale = [1, 2, 3, 4, 5];
 
     return (
-        <div>
+        <div className="ratingDiv">
             {scale.map((number) => {
                 return rating < number
                     ? <img src={greyStar} alt="jolie étoile grise" />

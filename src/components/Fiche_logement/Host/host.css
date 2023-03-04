@@ -1,13 +1,14 @@
 .data_host {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
 }
 
 
 .data_host img {
     border-radius: 80px;
+    height: 70px;
 }
 
 .data_host p {
