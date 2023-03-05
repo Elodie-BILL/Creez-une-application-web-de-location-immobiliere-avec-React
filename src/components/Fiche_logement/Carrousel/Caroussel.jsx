@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import left from "../../../assets/VectorLeft.png"
 import right from "../../../assets/VectorRight.png";
-import { useParams } from "react-router-dom";
 import "../Carrousel/Carrousel.css";
 
 

@@ -1,3 +1,17 @@
+@keyframes open {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(180deg);
+
+    }
+}
+
+
+
 .divTitle {
     height: 47px;
     margin: 1% 15% 0 15%;
@@ -7,6 +21,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+
+.divTitle:hover .imgVect {
+    animation-name: open;
+    animation-duration: 5ms;
+    animation-fill-mode: both;
 
 }
 
@@ -24,38 +45,8 @@
     margin-inline: 10px;
 }
 
-.imgVect:active {
+/* :active {} */
 
-    animation-name: open;
-    animation-duration: 5ms;
-    animation-fill-mode: both;
-
-}
-
-@keyframes open {
-    0% {
-        transform: rotate(0);
-
-    }
-
-    100% {
-        transform: rotate(180deg);
-
-    }
-}
-
-@keyframes close {
-    0% {
-        transform: rotate(90deg);
-
-    }
-
-    100% {
-        transform: rotate(0);
-
-    }
-
-}
 
 .Collapse_Title {
     font-size: 24px;

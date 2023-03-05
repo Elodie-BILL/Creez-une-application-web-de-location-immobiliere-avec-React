@@ -14,6 +14,7 @@ const Collapse = ({ title, texte }) => {
             {/* Test: {open ? 'vrai' : 'faux'} */}
             <div className="divTitle" onClick={() => { updateOpen(!open) }} >
 
+
                 <p className="Collapse_Title">
                     {title}
                 </p>
@@ -21,8 +22,9 @@ const Collapse = ({ title, texte }) => {
                 <img
                     className="imgVect"
                     src={Vector}
-                    alt="Image vectorielle d'une flèche "
+                    alt="Flèche d'ouverture et de fermeture "
                 />
+
             </div>
 
             {open && <div className="divTexte" >

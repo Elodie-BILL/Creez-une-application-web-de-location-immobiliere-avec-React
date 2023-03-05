@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types"
 import "../DataContent/DataContent.css"
 
 
@@ -26,6 +27,12 @@ const Content = ({ title, location, tag, rating }) => {
 
     )
 
+};
+
+Content.prototype = {
+    title: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    tag: PropTypes.array.isRequired
 };
 
 export default Content;

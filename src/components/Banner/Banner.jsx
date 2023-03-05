@@ -22,7 +22,7 @@ const Banner = ({ srcImage, altImage, textBanner }) => {
 Banner.propTypes = {
     srcImage: PropTypes.string,
     altImage: PropTypes.string,
-    textBanner: PropType; s.string,
+    textBanner: PropTypes.string,
 }
 export default Banner;
 

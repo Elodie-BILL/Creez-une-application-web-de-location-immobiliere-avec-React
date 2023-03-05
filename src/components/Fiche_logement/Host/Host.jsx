@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types"
 import "./host.css"
 
 const DataHost = ({ hostName, hostPic }) => {
@@ -7,6 +8,11 @@ const DataHost = ({ hostName, hostPic }) => {
         <p>{hostName}</p>
         <img src={hostPic} alt="" />
     </div>)
+}
+
+DataHost.prototype = {
+    hostName: PropTypes.string.isRequired,
+    hostPic: PropTypes.string.isRequired
 }
 
 export default DataHost;

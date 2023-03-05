@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import pinkStar from "../../../assets/pink_star.svg";
 import greyStar from "../../../assets/grey_star.svg"
 
@@ -29,5 +30,8 @@ const DisplayRating = ({ rating }) => {
  *  number: 5 | rating : 3 |  3 < 5 ? vrai -> on renvoie l'étoile grise
 */
 
+DisplayRating.prototype = {
+    rating: PropTypes.string.isRequired
+}
 
 export default DisplayRating;

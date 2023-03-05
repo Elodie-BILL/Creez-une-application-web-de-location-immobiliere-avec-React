@@ -26,3 +26,57 @@ a {
     text-decoration: none;
     color: #FF6060;
 }
+
+@media screen and (max-width: 1024px) {
+    .Home-header_nav {
+        width: 35%;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .Home-header {
+        margin: 1% 10% 1% 10%;
+        width: 80%;
+    }
+
+    .Home-header_logo {
+        width: 20%;
+    }
+
+    .Home-header_logo img {
+        height: 47px;
+        width: 100%;
+    }
+
+    .Home-header_nav {
+        width: 50%;
+
+    }
+
+}
+
+/* @media screen and (min-width: 375px) {
+    .Home-header {
+        margin: 0;
+        width: 100%
+    }
+
+    .Home-header_logo img {
+        height: 47px;
+        width: 100%;
+    }
+
+    .Home-header_nav {
+        width: 200px;
+
+    }
+
+    .Home-header_nav p {
+        font-size: 0.5em;
+    }
+
+
+
+}; */
