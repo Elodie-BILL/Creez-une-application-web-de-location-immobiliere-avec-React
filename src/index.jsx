@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Error from './pages/Error/Index';
 import Home from './pages/home/Index';
 import Header from './components/Header/Index';
@@ -11,8 +11,22 @@ import "./style.css"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// function NavUnderline() {
 
-//switch ne fontionne plus?? lg 16
+//     const location = useLocation();
+
+//     return (console.log('pathname', location.pathname))
+// }
+
+// function navUnderline() {
+//     if (location === '/') {
+//         return <p className="underline" > Accueil</p>
+//     } else {
+//         <p className="underline">A propos </p>
+
+//     }
+
+// }
 
 root.render(
     <React.StrictMode>

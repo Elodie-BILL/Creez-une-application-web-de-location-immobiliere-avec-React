@@ -13,11 +13,11 @@ function Header() {
                 />
             </div>
             <div className='Home-header_nav'>
-                <Link to="/">
-                    <p id='accueil'> Accueil </p>
+                <Link to="/" >
+                    <p> Accueil</p>
                 </Link>
-                <Link id='apropos' to="/apropos">
-                    <p>A propos</p>
+                <Link to="/apropos">
+                    <p>A propos </p>
                 </Link>
             </div>
         </header>

@@ -7,6 +7,7 @@ import Data from "../../data/data.json"
 
 
 function Home() {
+
     return (
 
         <React.Fragment>

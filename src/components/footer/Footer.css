@@ -1,8 +1,11 @@
 .DivFooter {
     background-color: #000;
     height: 200px;
-    padding-top: 20px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 
@@ -12,5 +15,21 @@
 
 .TextFooter {
     text-align: center;
+    padding-block: 20px;
     color: #fff;
+}
+
+@media screen and (min-width: 375px) {
+
+
+    .DivFooter img {
+        height: 67px;
+        width: 122px;
+    }
+
+    .LogoFooter {
+        padding: unset;
+
+    }
+
 }

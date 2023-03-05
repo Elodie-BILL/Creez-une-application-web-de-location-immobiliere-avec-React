@@ -27,6 +27,10 @@ a {
     color: #FF6060;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1024px) {
     .Home-header_nav {
         width: 35%;
@@ -57,26 +61,34 @@ a {
 
 }
 
-/* @media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     .Home-header {
-        margin: 0;
-        width: 100%
+        margin: 0 5% 2% 5%;
+        width: 90%
+    }
+
+    .Home-header_logo {
+        width: 40%;
     }
 
     .Home-header_logo img {
-        height: 47px;
+
         width: 100%;
     }
 
     .Home-header_nav {
-        width: 200px;
+        width: 40%;
 
     }
 
     .Home-header_nav p {
         font-size: 0.5em;
+        text-transform: uppercase
     }
 
 
 
-}; */
+
+}
+
+;
