@@ -1,23 +1,10 @@
-@keyframes open {
-    0% {
-        transform: rotate(0deg);
-
-    }
-
-    100% {
-        transform: rotate(180deg);
-
-    }
-}
-
-
 .collapse {
     margin-block: 20px;
 }
 
 .divTitle {
     height: 47px;
-    margin: 1% 16% 0 16%;
+
     border: 1px solid #FF6060;
     border-radius: 5px;
     background-color: #FF6060;
@@ -27,16 +14,9 @@
 
 }
 
-.divTitle .imgVect {
-    animation-name: open;
-    animation-duration: 5ms;
-    animation-fill-mode: both;
-
-}
-
 .divTexte {
     /* height: 137px; */
-    margin: 0 16% 2% 16%;
+
     border: 1px solide #F6F6F6;
     background-color: #F6F6F6;
 
@@ -69,19 +49,20 @@
     font-weight: lighter;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 374px) and (max-width: 375px) {
     .divTitle {
         height: 30px;
-        margin: 1% 5%;
+        margin: 0 5%;
     }
 
     .divTexte {
-        margin: 1% 5%;
+        margin: 0 5%;
 
     }
 
     .Collapse_Title {
         font-size: 13px;
+        margin: 0;
     }
 
     .Collapse_Texte {
@@ -90,5 +71,11 @@
 
     .imgVect {
         height: 18px;
+        ;
+    }
+
+    .collapse {
+        margin-block: 5px;
+
     }
 }

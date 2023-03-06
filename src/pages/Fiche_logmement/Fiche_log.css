@@ -34,4 +34,59 @@
 .collapseDiv p {
     margin: 0;
     width: 100%;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 375px) {
+    .titleRateHost {
+        flex-direction: column;
+        margin: 0 5%;
+        width: 90%;
+
+    }
+
+    .titleDiv h1 {
+        font-size: 18px;
+
+    }
+
+    .titleDiv p {
+        font-size: 14px;
+    }
+
+    .ratingHostDiv {
+        width: 100%;
+    }
+
+    .titleDiv {
+        width: unset;
+    }
+
+    .ratingHostDiv {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+    }
+
+    .ratingDiv img {
+        height: 18px;
+
+    }
+
+    .collapseDiv {
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .collapseDiv :nth-child(n) {
+        width: unset;
+    }
+
+    .collapse_Texte {
+        font-size: 12px;
+    }
+
+
 }

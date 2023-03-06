@@ -61,7 +61,7 @@ a {
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 374px) and (max-width: 375px) {
     .Home-header {
         margin: 0 5% 2% 5%;
         width: 90%
@@ -90,5 +90,3 @@ a {
 
 
 }
-
-;

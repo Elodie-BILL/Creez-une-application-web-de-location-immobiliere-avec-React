@@ -18,6 +18,7 @@ function Home() {
                         id={element.id}
                         title={element.title}
                         cover={element.cover}
+                        altText={element.title}
                     />
                 ))}
             </div>

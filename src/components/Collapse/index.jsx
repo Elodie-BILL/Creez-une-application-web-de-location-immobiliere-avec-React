@@ -11,7 +11,6 @@ const Collapse = ({ title, texte }) => {
 
     return (
         <div className="collapse">
-            {/* Test: {open ? 'vrai' : 'faux'} */}
             <div className="divTitle" onClick={() => { updateOpen(!open) }} >
 
 
@@ -19,11 +18,16 @@ const Collapse = ({ title, texte }) => {
                     {title}
                 </p>
 
-                <img
+                {open ? <img
                     className="imgVect"
                     src={Vector}
                     alt="Flèche d'ouverture et de fermeture "
-                />
+                /> : <p> Fléche bas</p>}
+                {/* <img
+                    className="imgVect"
+                    src={Vector}
+                    alt="Flèche d'ouverture et de fermeture "
+                /> */}
 
             </div>
 
@@ -40,7 +44,9 @@ const Collapse = ({ title, texte }) => {
 
 Collapse.propTypes = {
     title: PropTypes.string.isRequired,
-    texte: PropTypes.string.isRequired,
+    texte: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.array]).isRequired,
 }
 
 

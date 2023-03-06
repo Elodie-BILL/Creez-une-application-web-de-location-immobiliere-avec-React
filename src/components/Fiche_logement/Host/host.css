@@ -16,3 +16,23 @@
 
     width: 20%;
 }
+
+@media screen and (max-width: 375px) {
+    .data_host {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 33%;
+    }
+
+    .data_host img {
+        height: 32px;
+    }
+
+    .data_host p {
+        font-size: 12px;
+        width: 70%;
+        text-align: end;
+
+    }
+
+}

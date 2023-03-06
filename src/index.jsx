@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Error from './pages/Error/Index';
 import Home from './pages/home/Index';
 import Header from './components/Header/Index';
@@ -11,22 +11,7 @@ import "./style.css"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-// function NavUnderline() {
 
-//     const location = useLocation();
-
-//     return (console.log('pathname', location.pathname))
-// }
-
-// function navUnderline() {
-//     if (location === '/') {
-//         return <p className="underline" > Accueil</p>
-//     } else {
-//         <p className="underline">A propos </p>
-
-//     }
-
-// }
 
 root.render(
     <React.StrictMode>
@@ -36,10 +21,9 @@ root.render(
 
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/error404" element={<Error />} />
                 <Route path="/apropos" element={<Apropos />} />
-                <Route path="/:id" element={<FicheLogement />} />
-                <Route element={<Error />} />
+                <Route path="/logement/:id" element={<FicheLogement />} />
+                <Route path="*" element={<Error />} />
             </Routes>
 
             <Footer />

@@ -19,13 +19,13 @@ function FicheLogement() {
         return logement.id === id;
     })
 
-    const tagContent = findLogement.tags.map((tag) => <p> {tag}</p>);
-    const equipementContent = findLogement.equipments.map((equipment) => (<p>{equipment}</p>))
+    const tagContent = findLogement.tags.map((tag, index) => <p key={index}> {tag}</p>);
+    const equipementContent = findLogement.equipments.map((equipment, index) => (<p key={index}>{equipment}</p>))
 
 
 
     return (
-        <React.Fragment>.
+        <React.Fragment>
 
             <Carrousel srcImg={findLogement.pictures} />
             <div className="titleRateHost">

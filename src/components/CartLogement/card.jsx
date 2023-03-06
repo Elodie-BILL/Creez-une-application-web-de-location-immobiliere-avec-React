@@ -10,7 +10,7 @@ console.log(Data);
 const Card = ({ title, cover, altText, id }) => {
     return (
         <article className="article_card">
-            <Link to={id}>
+            <Link to={"logement/" + id}>
                 <img className="cardStyle" src={`${cover}`} alt={altText} />
                 <h2>{`${title}`}</h2>
             </Link>
@@ -19,10 +19,10 @@ const Card = ({ title, cover, altText, id }) => {
 };
 
 Card.propTypes = {
-    id: PropTypes.string,
-    title: PropTypes.string,
-    cover: PropTypes.string,
-    altText: PropTypes.string
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired,
+    altText: PropTypes.string.isRequired
 };
 
 export default Card;

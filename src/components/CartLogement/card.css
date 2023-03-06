@@ -27,7 +27,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     .article_card {}
 
     .article_card a {

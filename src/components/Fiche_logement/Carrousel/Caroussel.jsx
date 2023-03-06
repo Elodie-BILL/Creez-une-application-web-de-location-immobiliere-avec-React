@@ -54,6 +54,6 @@ const Carrousel = ({ srcImg }) => {
 }
 
 Carrousel.propTypes = {
-    srcImg: PropTypes.array,
+    srcImg: PropTypes.array.isRequired,
 }
 export default Carrousel;

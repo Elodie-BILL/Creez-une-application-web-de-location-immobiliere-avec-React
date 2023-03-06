@@ -19,8 +19,10 @@
     color: #fff;
 }
 
-@media screen and (min-width: 375px) {
-
+@media screen and (min-width: 374px) and (max-width: 375px) {
+    .DivFooter {
+        margin-top: 40px;
+    }
 
     .DivFooter img {
         height: 67px;

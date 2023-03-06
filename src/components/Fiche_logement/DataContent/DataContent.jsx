@@ -10,20 +10,20 @@ const Content = ({ title, location, tag, rating }) => {
     console.log(tagLength);
 
     return (
-        <React.Fragment>
-            <div>
-                <h1>
-                    {title}
-                </h1>
-                <p>
-                    {location}
-                </p>
-                <span >
-                    {tag}
-                </span>
-            </div>
 
-        </React.Fragment >
+        <React.Fragment>
+            <h1>
+                {title}
+            </h1>
+            <p>
+                {location}
+            </p>
+            <span >
+                {tag}
+            </span>
+        </React.Fragment>
+
+
 
     )
 

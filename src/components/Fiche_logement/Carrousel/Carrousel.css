@@ -1,6 +1,5 @@
 .carrousel_div {
     height: 415px;
-    width: 1240px;
     margin: 2% 10%;
     display: flex;
     position: relative;
@@ -23,7 +22,7 @@
 
 .img {
     height: 415px;
-    width: 1240px;
+    width: 100%;
     object-fit: cover;
     border-radius: 25px;
 }
@@ -31,5 +30,37 @@
 #left_btn {
     left: 20px;
     bottom: 40%;
+
+}
+
+@media screen and (min-width: 374px) and (max-width: 375px) {
+    .carrousel_div {
+        width: 90%;
+        height: 255px;
+        margin: 0 5%;
+
+    }
+
+    .swip_btn {
+        height: 24px;
+    }
+
+    #right_btn {
+        right: -10px;
+        bottom: 50%;
+
+    }
+
+    .img {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    #left_btn {
+        right: -10px;
+        bottom: 50%;
+
+    }
 
 }

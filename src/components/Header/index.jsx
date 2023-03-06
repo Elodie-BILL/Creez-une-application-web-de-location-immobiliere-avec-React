@@ -1,9 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import LOGO from '../../assets/LOGO.svg';
 import './headerStyle.css';
 
+
 function Header() {
+    const location = useLocation();
+    const path = location.pathname
+
     return (
         <header className="Home-header">
             <div className='Home-header_logo'>
@@ -13,11 +17,11 @@ function Header() {
                 />
             </div>
             <div className='Home-header_nav'>
-                <Link to="/" >
-                    <p> Accueil</p>
+                <Link to="/" className={path === "/" && 'underline'}>
+                    Accueil
                 </Link>
-                <Link to="/apropos">
-                    <p>A propos </p>
+                <Link to="/apropos" className={path === "/apropos" && 'underline'}>
+                    A propos
                 </Link>
             </div>
         </header>

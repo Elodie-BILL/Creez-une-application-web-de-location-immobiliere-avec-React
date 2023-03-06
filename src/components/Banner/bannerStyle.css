@@ -62,7 +62,7 @@
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 374px) and (max-width: 375px) {
     .banner-section {
         margin: 0 5%;
         width: 90%;

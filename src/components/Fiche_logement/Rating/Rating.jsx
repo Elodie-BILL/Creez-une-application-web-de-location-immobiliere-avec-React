@@ -11,10 +11,10 @@ const DisplayRating = ({ rating }) => {
 
     return (
         <div className="ratingDiv">
-            {scale.map((number) => {
+            {scale.map((number, index) => {
                 return rating < number
-                    ? <img src={greyStar} alt="jolie étoile grise" />
-                    : <img src={pinkStar} alt="jolie étoile rose" />
+                    ? <img key={index} src={greyStar} alt="jolie étoile grise" />
+                    : <img key={index} src={pinkStar} alt="jolie étoile rose" />
             })}
         </div>
     )
