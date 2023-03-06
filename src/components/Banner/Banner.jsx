@@ -1,10 +1,10 @@
 import React from "react";
-import './bannerStyle.css'
+import './BannerStyle.css'
 import PropTypes from 'prop-types';
 
 const Banner = ({ srcImage, altImage, textBanner }) => {
     return (
-        <div className='banner-section'>
+        <div className="banner-section">
             <img
                 src={srcImage}
                 alt={altImage}

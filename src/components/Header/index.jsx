@@ -17,10 +17,10 @@ function Header() {
                 />
             </div>
             <div className='Home-header_nav'>
-                <Link to="/" className={path === "/" && 'underline'}>
+                <Link to="/" className={path === "/" ? 'underline' : undefined}>
                     Accueil
                 </Link>
-                <Link to="/apropos" className={path === "/apropos" && 'underline'}>
+                <Link to="/apropos" className={path === "/apropos" ? 'underline' : undefined}>
                     A propos
                 </Link>
             </div>

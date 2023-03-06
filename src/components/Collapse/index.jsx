@@ -19,19 +19,18 @@ const Collapse = ({ title, texte }) => {
                 </p>
 
                 {open ? <img
+                    className="imgVectReverse"
+                    src={Vector}
+                    alt="Flèche d'ouverture "
+                /> : <img
                     className="imgVect"
                     src={Vector}
-                    alt="Flèche d'ouverture et de fermeture "
-                /> : <p> Fléche bas</p>}
-                {/* <img
-                    className="imgVect"
-                    src={Vector}
-                    alt="Flèche d'ouverture et de fermeture "
-                /> */}
+                    alt="Flèche de fermeture "
+                />}
 
             </div>
 
-            {open && <div className="divTexte" >
+            {open && <div className="divTexte">
                 <p className="Collapse_Texte">
                     {texte}
                 </p>

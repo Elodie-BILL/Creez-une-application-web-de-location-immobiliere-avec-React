@@ -1,8 +1,8 @@
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import BannerHome from '../../assets/BannerHome.png';
-import Card from "../../components/CartLogement/card";
-import "../home/Home.css"
+import Card from "../../components/CartLogement/Card";
+import "./Home.css"
 import Data from "../../data/data.json"
 
 

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import Data from "../../data/data.json"
-import "../CartLogement/card.css"
+import "../CartLogement/Card.css"
 
 
 console.log(Data);
