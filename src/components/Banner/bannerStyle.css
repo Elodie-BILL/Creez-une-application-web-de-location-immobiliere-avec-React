@@ -51,6 +51,10 @@
         width: 80%;
     }
 
+    .banner-section img {
+        border: 15px;
+    }
+
     .banner-section_p--div {
         bottom: 30%;
         width: 55%;

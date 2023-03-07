@@ -33,8 +33,8 @@ const Carrousel = ({ srcImg }) => {
 
         <div className="carrousel_div">
 
-            {lengthPics !== index + 1 ? <img
-                onClick={nextPic}
+            {lengthPics > 1 ? <img
+                onClick={prevPic}
                 className="swip_btn"
                 id="right_btn" src={right}
                 alt="flèche vers la droite"
@@ -45,11 +45,11 @@ const Carrousel = ({ srcImg }) => {
                 <span className="numberPic"> {index + 1} / {lengthPics} </span>
             </div>
 
-            {lengthPics !== index + 1 ? <img
+            {lengthPics > 1 ? <img
                 onClick={nextPic}
                 className="swip_btn"
-                id="right_btn" src={right}
-                alt="flèche vers la droite"
+                id="left_btn" src={left}
+                alt="flèche vers la gauche"
             /> : undefined}
 
         </div>

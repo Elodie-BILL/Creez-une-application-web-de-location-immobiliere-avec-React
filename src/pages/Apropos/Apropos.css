@@ -1,4 +1,23 @@
 .globalDiv_Collapse {
-    /* margin: 3% 0 10% 0; */
     margin: 1% 16% 0 16%;
+}
+
+@media screen and (max-width: 769px) {
+    .globalDiv_Collapse {
+        margin: 1% 10% 0 10%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+    .globalDiv_Collapse {
+        margin: 0;
+
+    }
+
+    .collapse {
+        margin-bottom: 20px;
+    }
 }

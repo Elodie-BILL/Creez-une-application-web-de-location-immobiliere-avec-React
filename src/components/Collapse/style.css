@@ -5,7 +5,6 @@
 
 .divTitle {
     height: 47px;
-
     border: 1px solid #FF6060;
     border-radius: 5px;
     background-color: #FF6060;
@@ -18,6 +17,7 @@
 .divTexte {
     border: 1px solide #F6F6F6;
     background-color: #F6F6F6;
+    height: 180px;
 
 }
 
@@ -48,21 +48,28 @@
 }
 
 .Collapse_Texte {
-    font-size: 20px;
+    font-size: 24px;
     margin: 0;
-    padding: 20px 12px;
+    padding: 30px 12px;
     color: #FF6060;
     font-weight: lighter;
 }
 
-@media screen and (min-width: 374px) and (max-width: 375px) {
+@media screen and (max-width: 768px) {
+    .Collapse_Title {
+        font-size: 18px;
+
+    }
+}
+
+@media screen and (max-width: 375px) {
     .divTitle {
         height: 30px;
-        margin: 0 5%;
+        margin: 0 0 0 5%;
     }
 
     .divTexte {
-        margin: 0 5%;
+        margin: 0 0 0 5%;
 
     }
 

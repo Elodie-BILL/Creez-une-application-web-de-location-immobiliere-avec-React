@@ -10,7 +10,7 @@
 }
 
 .LogoFooter {
-    padding: 3% 45%;
+    padding: 3% 45% 1% 45%;
 }
 
 .TextFooter {
@@ -25,13 +25,13 @@
     }
 
     .DivFooter img {
-        height: 67px;
-        width: 122px;
+        /* height: 67px;
+        width: 122px; */
+        padding: 8% 0 0 0;
     }
 
-    .LogoFooter {
-        padding: unset;
-
+    .TextFooter {
+        font-size: 12px;
     }
 
 }
