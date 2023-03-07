@@ -1,5 +1,6 @@
 .collapse {
-    margin-block: 20px;
+    margin: 20px 20px 20px 0;
+    width: 100%;
 }
 
 .divTitle {
@@ -15,32 +16,30 @@
 }
 
 .divTexte {
-    /* height: 137px; */
-
     border: 1px solide #F6F6F6;
     background-color: #F6F6F6;
 
 }
 
-.imgVect {
+.divTitle img {
     height: 25px;
     width: 30px;
     margin-inline: 10px;
 }
 
-.imgVectReverse {
+/* .imgVectReverse {
     transform: rotate(180deg);
     height: 25px;
     width: 30px;
     margin-inline: 10px;
-}
+} */
 
 
 
 
 .Collapse_Title {
     font-size: 24px;
-    text-align: left;
+    /* text-align: left; */
     margin: 0;
     padding: 12px;
     color: #fff;

@@ -3,7 +3,7 @@ import Carrousel from "../../components/Fiche_logement/Carrousel/Caroussel";
 import DataContent from "../../components/Fiche_logement/DataContent/DataContent"
 import { useParams } from "react-router-dom";
 import data from "../../data/data.json"
-import Collapse from "../../components/Collapse";
+import Collapse from "../../components/Collapse/Index";
 import DisplayRating from "../../components/Fiche_logement/Rating/Rating";
 import DataHost from "../../components/Fiche_logement/Host/Host";
 import "./Fiche_log.css"

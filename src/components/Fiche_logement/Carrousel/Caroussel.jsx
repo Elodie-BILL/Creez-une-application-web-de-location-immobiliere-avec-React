@@ -27,27 +27,30 @@ const Carrousel = ({ srcImg }) => {
         }
     }
 
+
+
     return (
 
         <div className="carrousel_div">
 
-            <img
+            {lengthPics !== index + 1 ? <img
                 onClick={nextPic}
                 className="swip_btn"
                 id="right_btn" src={right}
                 alt="flèche vers la droite"
-            />
+            /> : undefined}
 
             < div className="imgDiv">
                 <img className="img" src={srcImg[index]} alt="Photographies du logement" />
-
+                <span className="numberPic"> {index + 1} / {lengthPics} </span>
             </div>
 
-            <img
-                onClick={prevPic}
-                className="swip_btn" id="left_btn"
-                src={left} alt="flèche vers la gauche"
-            />
+            {lengthPics !== index + 1 ? <img
+                onClick={nextPic}
+                className="swip_btn"
+                id="right_btn" src={right}
+                alt="flèche vers la droite"
+            /> : undefined}
 
         </div>
     )
