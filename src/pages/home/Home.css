@@ -9,11 +9,52 @@
     border-radius: 25px;
 }
 
-@media screen and (min-width: 374px) and (max-width: 375px) {
+@media screen and (max-width:992px) {
     .cards-div {
-        background-color: transparent;
-        border: 0;
-        margin: 0 10%;
+        border-radius: 25px;
+        margin: 1% 5%;
+        width: 90%;
+    }
 
+    .cardStyle {
+        border-radius: 20px;
+        margin-block: 20px;
+        width: 380px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .cards-div {
+        width: 100%;
+        margin: 0;
+
+        background-color: transparent;
+        border: unset;
+    }
+
+    .cardStyle {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .cards-div {
+        width: 90%;
+        margin: 0 5%;
+
+
+    }
+
+    .cardStyle {
+        width: 323px;
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        bottom: 20px;
+        width: 90%;
     }
 }

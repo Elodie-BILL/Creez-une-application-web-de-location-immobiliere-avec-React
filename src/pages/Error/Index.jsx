@@ -10,7 +10,7 @@ const Error = () => {
             <img className='ErrorImg' src={ImgEr} alt="error 404 " />
             <p className='Error_p'>Oups! La page que vous demandez n'existe pas.</p>
             <Link className='ErrorLink_endpage' to="/">
-                <p>Retourner sur la page d'accueil</p>
+                Retourner sur la page d'accueil
             </Link>
         </section>
 

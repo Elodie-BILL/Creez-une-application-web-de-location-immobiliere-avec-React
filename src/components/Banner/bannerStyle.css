@@ -22,17 +22,21 @@
 }
 
 .banner-section_p {
-    font-size: 3em;
+    font-size: 48px;
     color: #fff;
     margin: 0;
 
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     .banner-section {
-        margin: 0 10% 0 10%;
-        width: 80%;
+        margin: 0 5% 0 5%;
+        width: 90%;
+    }
+
+    .banner-section img {
+        border-radius: 20px;
     }
 
     .banner-section_p--div {
@@ -40,43 +44,41 @@
     }
 
     .banner-section_p {
-        font-size: 2.5em;
+        font-size: 38px;
     }
 
 }
 
 @media screen and (max-width: 768px) {
     .banner-section {
-        margin: 0 10%;
-        width: 80%;
+        margin: unset;
+        width: 100%;
     }
 
     .banner-section img {
-        border: 15px;
-    }
-
-    .banner-section_p--div {
-        bottom: 30%;
-        width: 55%;
+        border-radius: 15px;
+        padding: 2%;
     }
 
     .banner-section_p {
-        font-size: 2.25em;
+        font-size: 35px;
     }
 
 }
 
-@media screen and (min-width: 374px) and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     .banner-section {
         margin: 0 5%;
         width: 90%;
-        height: 8em;
+        height: 111px;
+
     }
 
     .banner-section img {
-        height: 7em;
+        height: 111px;
         border-radius: 10px;
-        object-fit: cover;
+        padding: 0;
+
     }
 
     .banner-section_p--div {
@@ -86,9 +88,6 @@
     }
 
     .banner-section_p {
-        font-size: 1.5em
+        font-size: 24px;
     }
 }
-
-
-;
