@@ -1,8 +1,8 @@
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import bannerImg from '../../assets/AproposImg.png';
-import Collapse from "../../components/Collapse/Index";
-import "../../components/Collapse/Style.css"
+import Collapse from "../../components/Collapse/Collapse";
+import "../../components/Collapse/Collapse.css"
 import "../Apropos/Apropos.css"
 
 

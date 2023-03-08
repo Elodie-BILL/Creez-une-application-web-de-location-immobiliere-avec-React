@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types"
-import "./Style.css"
+import "./Collapse.css"
 import { useState } from "react";
 import Vector from "../../assets/Vector.svg"
 

@@ -32,6 +32,8 @@
 }
 
 @media screen and (max-width:992px) {
+
+    /*page Fich_Log.jsx*/
     .ratingHostDiv {
         justify-content: space-evenly;
 
@@ -39,6 +41,8 @@
 }
 
 @media screen and (max-width:768px) {
+
+    /*page Fich_Log.jsx*/
     .titleRateHost {
         width: 90%;
         margin: 5% 5% 0 5%;
@@ -48,17 +52,23 @@
         width: 70%;
     }
 
-    .data_host p {
-        width: 30%;
-    }
-
     .collapseDiv {
         width: 90%;
         margin: 0 5%;
     }
+
+    /*Composant Host*/
+    .data_host p {
+        width: 30%;
+    }
+
+
+
 }
 
 @media screen and (max-width: 375px) {
+
+    /*page Fich_Log.jsx*/
     .titleRateHost {
         flex-direction: column;
         margin: 0 5%;
@@ -70,6 +80,10 @@
         width: 100%;
     }
 
+    .titleDiv {
+        width: unset;
+    }
+
     .titleDiv h1 {
         font-size: 18px;
 
@@ -77,10 +91,6 @@
 
     .titleDiv p {
         font-size: 14px;
-    }
-
-    .titleDiv {
-        width: unset;
     }
 
     .titleDiv span {
@@ -94,6 +104,25 @@
         border-radius: 5px;
     }
 
+    .ratingHostDiv {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+    }
+
+    .collapseDiv {
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .collapseDiv :nth-child(n) {
+        width: unset;
+    }
+
+    /* Composant Host*/
     .data_host {
         flex-direction: row;
         justify-content: space-between;
@@ -111,30 +140,13 @@
 
     }
 
-
-
-    .ratingHostDiv {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin-bottom: 20px;
-
-    }
-
+    /*Composant Rating*/
     .ratingDiv img {
         height: 18px;
 
     }
 
-    .collapseDiv {
-        margin: 0;
-        flex-direction: column;
-        width: 100%;
-
-    }
-
-    .collapseDiv :nth-child(n) {
-        width: unset;
-    }
+    /*Composant Callapse*/
 
     .collapse_Texte {
         font-size: 12px;

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types"
-import "./host.css"
+import "./Host.css"
 
 const DataHost = ({ hostName, hostPic }) => {
 

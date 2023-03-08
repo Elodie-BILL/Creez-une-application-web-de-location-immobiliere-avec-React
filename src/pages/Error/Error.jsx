@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import ImgEr from "../../assets/404.png"
+import ImgEr from "../../assets/404.svg"
 import "../Error/Error.css"
 
 
