@@ -45,61 +45,6 @@
     font-size: 18px;
 }
 
-@media screen and (max-width: 768px) {
-    .carrousel_div {
-        height: 315px;
-        width: 90%;
-        margin: 0 5%;
-    }
 
-    .imgDiv {
-        width: 100%;
-    }
 
-    .swip_btn {
-        height: 40px;
-    }
-
-    .img {
-        width: 100%;
-        border-radius: 15px;
-    }
-
-    .numberPic {
-        bottom: 1%;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .carrousel_div {
-        width: 90%;
-        height: 255px;
-        margin: 0 5%;
-
-    }
-
-    .swip_btn {
-        height: 24px;
-    }
-
-    #right_btn {
-
-        bottom: 50%;
-
-    }
-
-    .imgDiv {
-        width: 335px;
-    }
-
-    .img {
-        border-radius: 10px;
-    }
-
-    #left_btn {
-
-        bottom: 50%;
-
-    }
-
-}
+@media screen and (max-width: 375px) {}

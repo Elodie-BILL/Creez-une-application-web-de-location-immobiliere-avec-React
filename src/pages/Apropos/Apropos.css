@@ -1,5 +1,11 @@
 .globalDiv_Collapse {
-    margin: 1% 16% 0 16%;
+    margin: 1% 16% 3% 16%;
+}
+
+/*Composant: Collapse*/
+.collapse {
+    margin: 20px 20px 35px 0;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -15,20 +21,15 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
 
     /*page : Apropos.jsx*/
     .globalDiv_Collapse {
-        margin: 0;
+        margin: 0 5% 20% 5%;
 
     }
 
     /*Composant: Collapse*/
-    .collapse {
-        margin-bottom: 20px;
-        margin-block: 5px;
-
-    }
 
     .Collapse_Title {
         font-size: 13px;
@@ -41,11 +42,11 @@
 
     .divTitle {
         height: 30px;
-        margin: 0 0 0 5%;
+        margin: 0;
     }
 
     .divTexte {
-        margin: 0 0 0 5%;
+        margin: 0;
 
     }
 

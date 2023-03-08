@@ -32,6 +32,7 @@
 @media screen and (max-width: 992px) {
     .ErrorImg {
         width: 50%;
+        margin: 10% auto;
     }
 
     .Error_p {
@@ -43,31 +44,42 @@
     }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .ErrorImg {
         height: 50%;
-        width: 50%;
-        margin: 5% auto;
+        margin: 15% auto;
+
     }
 
     .Error_p {
         font-size: 24px;
+        font-weight: 500;
+    }
+
+    .ErrorLink_endpage {
+        font-size: 16px;
     }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 376px) {
     .ErrorImg {
-        margin: 25% auto;
+        margin: 25% auto 5% auto;
     }
 
     .Error_p {
-        margin-inline: 10%;
-        font-size: 18px;
-        font-weight: 400;
+
+        margin: 5% 10% 20% 10%;
+        padding-inline: 16%;
+        font-size: 14px;
+        text-align: center;
+
     }
 
     .ErrorLink_endpage {
         margin: 20% 0 20% 0;
+
+        font-size: 14px;
+        text-align: center;
     }
 
-} */
+}
