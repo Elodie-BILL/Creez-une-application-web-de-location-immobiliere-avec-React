@@ -1,0 +1,60 @@
+.cards-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 2% 10%;
+    background-color: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    border-radius: 25px;
+}
+
+@media screen and (max-width:992px) {
+    .cards-div {
+        border-radius: 25px;
+        margin: 1% 5%;
+        width: 90%;
+    }
+
+    .cardStyle {
+        border-radius: 20px;
+        margin-block: 20px;
+        width: 380px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .cards-div {
+        width: 100%;
+        margin: 0;
+
+        background-color: transparent;
+        border: unset;
+    }
+
+    .cardStyle {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .cards-div {
+        width: 90%;
+        margin: 0 5%;
+
+
+    }
+
+    .cardStyle {
+        width: 323px;
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        bottom: 20px;
+        width: 90%;
+    }
+}
