@@ -13,7 +13,7 @@ p {
 
 }
 
-span {
+.tag_span {
 
     display: flex;
 
@@ -21,7 +21,7 @@ span {
 
 }
 
-span :nth-child(1n+0) {
+.tag_span :nth-child(1n+0) {
     border: 1px solid #FF6060;
     border-radius: 11px;
     background-color: #FF6060;
@@ -34,6 +34,6 @@ span :nth-child(1n+0) {
 
 }
 
-.span :nth-child(1n+0) p {
+.tag_span :nth-child(1n+0) p {
     text-align: center;
 }

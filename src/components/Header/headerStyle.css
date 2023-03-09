@@ -89,3 +89,14 @@ a {
 
 
 }
+
+@media screen and (max-width: 320px) {
+    .Home-header {
+        width: 100%;
+        margin: 0;
+    }
+
+    .Home-header_nav {
+        font-size: 10px;
+    }
+}

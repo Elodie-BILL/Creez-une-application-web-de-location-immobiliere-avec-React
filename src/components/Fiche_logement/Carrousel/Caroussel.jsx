@@ -34,7 +34,7 @@ const Carrousel = ({ srcImg }) => {
         <div className="carrousel_div">
 
             {lengthPics > 1 ? <img
-                onClick={prevPic}
+                onClick={nextPic}
                 className="swip_btn"
                 id="right_btn" src={right}
                 alt="flèche vers la droite"
@@ -46,7 +46,7 @@ const Carrousel = ({ srcImg }) => {
             </div>
 
             {lengthPics > 1 ? <img
-                onClick={nextPic}
+                onClick={prevPic}
                 className="swip_btn"
                 id="left_btn" src={left}
                 alt="flèche vers la gauche"

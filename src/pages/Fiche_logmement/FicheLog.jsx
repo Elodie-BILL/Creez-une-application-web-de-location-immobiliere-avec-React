@@ -20,7 +20,7 @@ function FicheLogement() {
     })
 
     const tagContent = findLogement.tags.map((tag, index) => <p key={index}> {tag}</p>);
-    const equipementContent = findLogement.equipments.map((equipment, index) => (<p key={index} className="equipement_p"> {equipment} </p>))
+    const equipementContent = findLogement.equipments.map((equipment, index) => (<span key={index} className="equipement_p"> {equipment} </span>))
 
 
 

@@ -18,7 +18,7 @@ const Content = ({ title, location, tag, rating }) => {
             <p>
                 {location}
             </p>
-            <span >
+            <span className="tag_span">
                 {tag}
             </span>
         </React.Fragment>

@@ -33,6 +33,11 @@
     font-size: 18px;
 }
 
+.collapse_Texte {
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (max-width:992px) {
 
     /*page Fich_Log.jsx*/
@@ -219,7 +224,9 @@
         font-size: 12px;
     }
 
+
     .equipement_p {
+        margin: 0;
         font-size: 12px;
     }
 

@@ -58,3 +58,14 @@
         width: 90%;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .cards-div {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cardStyle {
+        width: 100%;
+    }
+}
