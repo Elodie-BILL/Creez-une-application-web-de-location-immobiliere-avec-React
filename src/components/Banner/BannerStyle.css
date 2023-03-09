@@ -105,6 +105,10 @@
         margin: 0;
     }
 
+    .banner-section_p--div {
+        width: 55%;
+    }
+
     .banner-section_p {
         font-size: 18px;
 

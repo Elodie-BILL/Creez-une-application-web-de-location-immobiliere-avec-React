@@ -15,7 +15,7 @@ const Content = ({ title, location, tag, rating }) => {
             <h1>
                 {title}
             </h1>
-            <p>
+            <p className="location_p">
                 {location}
             </p>
             <span className="tag_span">

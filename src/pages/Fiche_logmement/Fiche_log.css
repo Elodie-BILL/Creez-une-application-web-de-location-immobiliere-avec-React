@@ -33,7 +33,7 @@
     font-size: 18px;
 }
 
-.collapse_Texte {
+.Collapse_Texte {
     display: flex;
     flex-direction: column;
 }
@@ -116,6 +116,8 @@
 
     .ratingHostDiv {
         width: 100%;
+        align-items: center;
+        margin: 0;
     }
 
     .titleDiv {
@@ -132,7 +134,7 @@
 
     .titleDiv span {
         width: 60%;
-        height: 18px;
+        /* height: 18px; */
     }
 
     .titleDiv span :nth-child(1n+0) {
@@ -189,6 +191,11 @@
 
         bottom: 50%;
 
+    }
+
+    /* Composant: DataContent */
+    .tag_span {
+        margin: 0;
     }
 
     /* Composant Host*/

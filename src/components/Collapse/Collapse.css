@@ -42,3 +42,7 @@
     color: #FF6060;
     font-weight: lighter;
 }
+
+.imgVectReverse {
+    transform: rotate(180deg);
+}

@@ -9,6 +9,7 @@
     border-radius: 25px;
 }
 
+
 @media screen and (max-width:992px) {
     .cards-div {
         border-radius: 25px;
@@ -35,7 +36,11 @@
     }
 
     .cardStyle {
-        width: 600px;
+        width: 700px;
+    }
+
+    h2 {
+        bottom: 25px;
     }
 }
 
@@ -43,8 +48,6 @@
     .cards-div {
         width: 90%;
         margin: 0 5%;
-
-
     }
 
     .cardStyle {

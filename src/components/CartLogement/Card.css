@@ -15,7 +15,8 @@
 h2 {
     position: absolute;
     color: #fff;
-    bottom: 30px;
+    bottom: 35px;
     left: 10px;
     font-size: 18px;
+    font-weight: 500;
 }

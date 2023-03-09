@@ -1,37 +1,57 @@
 .DivFooter {
     background-color: #000;
-    height: auto;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    height: 210px;
 
 }
 
 .LogoFooter {
-    margin: 3% 45% 1% 45%;
+    margin: 3% 0 1% 0;
 }
 
 .TextFooter {
     text-align: center;
-    margin-block: 20px;
     color: #fff;
+    font-size: 24px;
+    font-weight: 500;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width:768px) {
+    .DivFooter {
+        padding: 60px;
+    }
+
+    .TextFooter {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 376px) {
     .DivFooter {
         margin-top: 40px;
     }
 
     .DivFooter img {
-        /* height: 67px;
-        width: 122px; */
-        padding: 8% 0 0 0;
+        margin: 0 45% 0 45%;
+        height: 30px;
+
     }
 
     .TextFooter {
+
         font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .TextFooter {
+        font-size: 10px;
+        margin-top: 15px;
     }
 
 }
