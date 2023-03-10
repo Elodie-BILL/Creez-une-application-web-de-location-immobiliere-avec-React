@@ -93,8 +93,8 @@ a {
 
 @media screen and (max-width: 320px) {
     .Home-header {
-        width: 100%;
-        margin: 0;
+        width: 95%;
+        margin: 2%;
     }
 
     .Home-header_nav {
