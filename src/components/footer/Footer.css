@@ -19,13 +19,25 @@
     font-weight: 500;
 }
 
+@media screen and (max-width:992px) {
+    .TextFooter {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width:768px) {
+
+
     .DivFooter {
         padding: 60px;
     }
 
+    .LogoFooter {
+        height: 25px;
+    }
+
     .TextFooter {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
     }
 }

@@ -1,5 +1,5 @@
 .globalDiv_Collapse {
-    margin: 1% 16% 3% 16%;
+    margin: 1% 16% 12% 16%;
 }
 
 /*Composant: Collapse*/
@@ -42,11 +42,11 @@
 
     .divTitle {
         height: 30px;
-        margin: 0 5px;
+        margin: 0 10px;
     }
 
     .divTexte {
-        margin: 0 5px;
+        margin: 0 10px;
 
     }
 
