@@ -25,6 +25,7 @@
 
 .banner-section_p {
     font-size: 48px;
+    font-weight: 500;
     color: #fff;
     margin: 0;
 }
@@ -52,7 +53,7 @@
 
     .banner-section_p {
         font-size: 38px;
-        font-weight: 500;
+
     }
 
 }
