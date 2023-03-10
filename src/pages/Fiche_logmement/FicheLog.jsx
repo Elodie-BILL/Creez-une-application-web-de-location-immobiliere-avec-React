@@ -6,6 +6,7 @@ import data from "../../data/data.json"
 import Collapse from "../../components/Collapse/Collapse";
 import DisplayRating from "../../components/Fiche_logement/Rating/Rating";
 import DataHost from "../../components/Fiche_logement/Host/Host";
+import Error from "../Error/Error";
 import "./Fiche_log.css"
 
 
@@ -18,6 +19,9 @@ function FicheLogement() {
     const findLogement = data.find((logement) => {
         return logement.id === id;
     })
+    if (findLogement === undefined) {
+        return <Error />
+    }
 
     const tagContent = findLogement.tags.map((tag, index) => <p key={index}> {tag}</p>);
     const equipementContent = findLogement.equipments.map((equipment, index) => (<span key={index} className="equipement_p"> {equipment} </span>))

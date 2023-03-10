@@ -1,6 +1,6 @@
 .DivFooter {
     background-color: #000;
-    margin-top: 10px;
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,9 +43,7 @@
 }
 
 @media screen and (max-width: 376px) {
-    .DivFooter {
-        margin-top: 40px;
-    }
+
 
     .DivFooter img {
         margin: 0 45% 0 45%;
@@ -63,7 +61,6 @@
 @media screen and (max-width:320px) {
     .TextFooter {
         font-size: 10px;
-        margin-top: 15px;
     }
 
 }
