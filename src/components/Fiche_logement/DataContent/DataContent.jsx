@@ -4,7 +4,7 @@ import "../DataContent/DataContent.css"
 
 
 
-const Content = ({ title, location, tag, rating }) => {
+const Content = ({ title, location, tag }) => {
 
     const tagLength = tag.length;
     console.log(tagLength);
