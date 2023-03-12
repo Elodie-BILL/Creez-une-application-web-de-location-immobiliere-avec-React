@@ -18,7 +18,6 @@ const Banner = ({ srcImage, altImage, textBanner }) => {
 };
 
 
-//Definir les PropsTypes : https://reactjs.org/docs/typechecking-with-proptypes.html
 Banner.propTypes = {
     srcImage: PropTypes.string.isRequired,
     altImage: PropTypes.string.isRequired,
