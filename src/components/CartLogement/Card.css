@@ -38,7 +38,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
     .cardStyle {
-        width: 700px;
+        width: 100%;
     }
 
     h2 {
