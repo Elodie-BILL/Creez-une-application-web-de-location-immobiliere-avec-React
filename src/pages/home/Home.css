@@ -1,9 +1,10 @@
 .cards-div {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 80%;
-    margin: 2% 10%;
+    margin: 0 10%;
+    padding: 50px;
     background-color: #f6f6f6;
     border: 1px solid #f6f6f6;
     border-radius: 25px;
@@ -15,13 +16,11 @@
         border-radius: 25px;
         margin: 1% 5%;
         width: 90%;
+        width: unset;
+        padding: 0;
     }
 
-    .cardStyle {
-        border-radius: 20px;
-        margin-block: 20px;
-        width: 380px;
-    }
+
 
 }
 
@@ -30,35 +29,20 @@
     .cards-div {
         width: 100%;
         margin: 0;
-
+        flex-direction: column;
         background-color: transparent;
         border: unset;
     }
 
-    .cardStyle {
-        width: 700px;
-    }
 
-    h2 {
-        bottom: 25px;
-    }
 }
 
 @media screen and (max-width: 376px) {
     .cards-div {
         width: 90%;
         margin: 0 5%;
-    }
 
-    .cardStyle {
-        width: 335px;
-        height: 255px;
-        border-radius: 10px;
-    }
 
-    h2 {
-        bottom: 20px;
-        width: 90%;
     }
 }
 
@@ -66,9 +50,5 @@
     .cards-div {
         width: 100%;
         margin: 0;
-    }
-
-    .cardStyle {
-        width: 100%;
     }
 }

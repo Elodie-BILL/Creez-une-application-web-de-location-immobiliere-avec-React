@@ -12,9 +12,9 @@ const Content = ({ title, location, tag }) => {
     return (
 
         <React.Fragment>
-            <h1>
+            <h3>
                 {title}
-            </h1>
+            </h3>
             <p className="location_p">
                 {location}
             </p>

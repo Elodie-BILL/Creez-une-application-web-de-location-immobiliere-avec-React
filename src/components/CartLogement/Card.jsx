@@ -9,12 +9,12 @@ console.log(Data);
 
 const Card = ({ title, cover, altText, id }) => {
     return (
-        <article className="article_card">
-            <Link to={"logement/" + id}>
-                <img className="cardStyle" src={`${cover}`} alt={altText} />
-                <h2>{`${title}`}</h2>
-            </Link>
-        </article>
+
+        <Link to={"logement/" + id} className="article_card">
+            <img className="cardStyle" src={`${cover}`} alt={altText} />
+            <h2>{`${title}`}</h2>
+        </Link>
+
     )
 };
 

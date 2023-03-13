@@ -51,4 +51,3 @@ Collapse.propTypes = {
 
 export default Collapse;
 
-//faire animation des vecteurs

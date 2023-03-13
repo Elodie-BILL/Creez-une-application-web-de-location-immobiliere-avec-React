@@ -42,7 +42,7 @@ const Carrousel = ({ srcImg }) => {
 
             < div className="imgDiv">
                 <img className="img" src={srcImg[index]} alt="Photographies du logement" />
-                <span className="numberPic"> {index + 1} / {lengthPics} </span>
+                {lengthPics === 1 ? undefined : <span className="numberPic"> {index + 1} / {lengthPics} </span>}
             </div>
 
             {lengthPics > 1 ? <img

@@ -9,9 +9,9 @@ const Banner = ({ srcImage, altImage, textBanner }) => {
                 src={srcImage}
                 alt={altImage}
             />
-            <div className="banner-section_p--div" >
-                <p className="banner-section_p">{textBanner} </p>
-            </div>
+
+            <h1>{textBanner} </h1>
+
 
         </div>
     )

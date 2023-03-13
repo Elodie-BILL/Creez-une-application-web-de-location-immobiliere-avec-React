@@ -2,9 +2,8 @@
     width: 80%;
     margin: 2% 10%;
     position: relative;
-    overflow: hidden;
-
-
+    display: flex;
+    align-items: center;
 }
 
 .banner-section img {
@@ -13,21 +12,14 @@
     border-radius: 30px;
 }
 
-.banner-section_p--div {
-    display: flex;
-    flex-direction: row;
+h1 {
+    width: 100%;
     position: absolute;
-    top: 30%;
-    left: 21%;
-    right: 5%;
-    bottom: 7%;
-}
-
-.banner-section_p {
     font-size: 48px;
     font-weight: 500;
     color: #fff;
     margin: 0;
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -47,11 +39,7 @@
         border-radius: 20px;
     }
 
-    .banner-section_p--div {
-        left: 16%;
-    }
-
-    .banner-section_p {
+    h1 {
         font-size: 38px;
 
     }
@@ -60,7 +48,7 @@
 
 @media screen and (max-width: 768px) {
     .banner-section {
-        margin: unset;
+        margin: 0;
         width: 100%;
     }
 
@@ -69,8 +57,9 @@
         padding: 2%;
     }
 
-    .banner-section_p {
+    h1 {
         font-size: 35px;
+        width: 80%;
     }
 
 }
@@ -90,13 +79,10 @@
 
     }
 
-    .banner-section_p--div {
-        bottom: 30%;
+    h1 {
+        text-align: left;
         left: 5%;
-        width: 70%;
-    }
-
-    .banner-section_p {
+        width: 220px;
         font-size: 24px;
     }
 }
@@ -107,13 +93,12 @@
         margin: 0;
     }
 
-    .banner-section_p--div {
+    h1 {
         width: 55%;
-    }
-
-    .banner-section_p {
         font-size: 18px;
-
     }
+
+
+
 
 }

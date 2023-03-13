@@ -1,14 +1,16 @@
 .article_card {
     position: relative;
+    width: 30%;
+    display: block;
 
 }
 
 .cardStyle {
     border-radius: 10px;
     height: 340px;
-    width: 340px;
+    width: 100%;
     object-fit: cover;
-    margin-block: 40px;
+    margin-bottom: 40px;
 
 }
 
@@ -19,4 +21,46 @@ h2 {
     left: 10px;
     font-size: 18px;
     font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+    .cardStyle {
+        border-radius: 20px;
+        margin-block: 20px;
+        width: 380px;
+    }
+
+    .article_card {
+        width: unset;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .cardStyle {
+        width: 700px;
+    }
+
+    h2 {
+        bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .cardStyle {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        bottom: 20px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cardStyle {
+        width: 100%;
+    }
 }

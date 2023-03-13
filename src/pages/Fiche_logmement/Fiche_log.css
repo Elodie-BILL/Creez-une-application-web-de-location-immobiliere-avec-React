@@ -50,7 +50,7 @@
         width: 70%;
     }
 
-    h1 {
+    h3 {
         font-size: 30px;
 
     }
@@ -88,7 +88,7 @@
         width: 60%;
     }
 
-    h1 {
+    h3 {
         font-size: 25px;
 
     }
@@ -131,9 +131,6 @@
         border-radius: 15px;
     }
 
-    .numberPic {
-        bottom: 1%;
-    }
 
     /*Composant Host*/
     .data_host p {
@@ -165,7 +162,7 @@
         width: unset;
     }
 
-    .h1 {
+    .h3 {
         font-size: 18px;
     }
 
